@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.data{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+h1{
+  font-size: 44px;
+  position: relative;
+  left: 420px;
+  top: 50px;
+  color: rgb(32, 35, 36);
+}
+body{
+  background-position: center;
+  background:#1b1c1c;
+  background-size: 1400px 1400px;
+}
+.wrapper{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .card{
+  background: rgb(72, 71, 71);
+  width: calc(33% - 20px);
+  height: 200px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(39, 39, 39, 0.477);
+  
+}
+.wrapper .card .circle{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+  background-color: rgb(9, 8, 8);
+/*   background-color: #ffffff', '#9a9597; */
+}
+
+.card .circle .box,
+.card .circle .box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.card .circle .box{
+  height: 100%;
+  width: 100%;
+  background: rgb(9, 7, 7);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.card .circle:hover .box{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .box span,
+.wrapper .card .text{
+  background: -webkit-linear-gradient(left, #f88509, #fc0202);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.circle .box span{
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.card .circle:hover .box span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.card .text{
+  font-size: 20px;
+  font-weight: 600;
+}
+@media(max-width: 753px){
+  .wrapper{
+    max-width: 700px;
+  }
+  .wrapper .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+  data{
+    font-size: 2em;
+  }
+  h1 { 
+    font-size: 24px; 
+ }
+}
+@media only screen and (max-width: 505px){
+  .wrapper{
+    max-width: 500px;
+  }
+  .wrapper .card{
+    width: 100%;
+  }
+  data{
+    font-size: 2em;
+  }
+  h1 { 
+    font-size: 10px; 
+ }
+}
+@media(max-width: 320px) {
+  .wrapper{
+    max-width: 300px;
+  }
+  .wrapper .card{
+    width: 40%;
+  }
+  h1 { 
+    font-size: 10px; 
+ }
+
+}

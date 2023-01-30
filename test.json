@@ -1,0 +1,14 @@
+{
+    "chartName": "Cities from Finland",
+    "members":[
+    {
+        "name":"Helsinki",
+        "population": 1305893,
+        "id":"FN101"
+    },
+    {   
+        "name":"Tampere",
+        "population": 341696,
+        "id":"FN102"
+    }
+ ]}
